@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    border: 1px dashed blue;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    border: 1px dashed red;
+    width: 80%;
+    height: 80%;
+    display: flex;
+}
+
+#sketch-control {
+    border: 1px solid orange;
+    width: 30%;
+}
+
+#sketch-board {
+    border: 1px solid blue;
+    width: 70%;
+}
