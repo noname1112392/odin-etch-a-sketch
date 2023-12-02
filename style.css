@@ -36,6 +36,8 @@ section {
 #sketch-board {
     border: 1px solid blue;
     width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 
 .row {
@@ -45,9 +47,8 @@ section {
     display: flex;
 }
 
-.cells {
-    border: dotted thin grey;
+.cell {
+    border: dotted thin green;
     width: 100%;
     height: 100%;
-    display: flex;
 }
