@@ -1,4 +1,5 @@
 const sketch_board = document.getElementById('sketch-board');
+const cell = document.querySelector('.cell');
 
 function createCells(userInput) {
     let value = userInput;
@@ -15,6 +16,11 @@ function createCells(userInput) {
             // You can set a unique identifier if needed, or use class for styling
             // cell.setAttribute("id", "cell-" + i + "-" + j);
             row.appendChild(cell);
+
+
+            cell.addEventListener('mouseover', function () {
+                cell.style.backgroundColor = '#3498db';
+            });
         }
     }
 }
