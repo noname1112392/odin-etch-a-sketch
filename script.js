@@ -1,10 +1,10 @@
 const sketch_board = document.getElementById('sketch-board');
 const inputValueBtn = document.getElementById('input-value-btn');
 const inputValueTxt = document.getElementById('input-value');
-const cell = document.querySelector('.cell');
 
 function createCells(userInput) {
     let value = userInput;
+    sketch_board.innerHTML = '';
     for (let i = 0; i < value; i++) {
         // Create a row for each iteration of the outer loop
         let row = document.createElement("div");
@@ -26,3 +26,8 @@ function createCells(userInput) {
         }
     }
 }
+
+inputValueBtn.addEventListener('click', function() {
+    let userInput = inputValueTxt.value;
+    createCells(userInput);
+})
