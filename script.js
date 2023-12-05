@@ -1,4 +1,6 @@
 const sketch_board = document.getElementById('sketch-board');
+const inputValueBtn = document.getElementById('input-value-btn');
+const inputValueTxt = document.getElementById('input-value');
 const cell = document.querySelector('.cell');
 
 function createCells(userInput) {
